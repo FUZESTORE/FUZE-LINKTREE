@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fuze store</title>
+  <!-- إضافة مكتبة Font Awesome للأيقونات -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: #002147; /* كحلي /
+      background: #002147; /* خلفية كحلي */
       font-family: Arial, sans-serif;
       color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
     .container {
       max-width: 400px;
       width: 90%;
       margin-top: 30px;
       text-align: center;
     }
-
     .logo {
-      width: 200px;
-      border-radius: 15px;
+      width: 120px;  /* تصغير الشعار إلى 120px */
+      height: auto;  /* الحفاظ على النسبة */
+      border-radius: 50%;  /* جعل الشعار دائري الشكل */
       margin-bottom: 20px;
     }
-
     h1 {
       font-size: 2em;
       margin-bottom: 30px;
     }
-
     .link-button {
-      background-color: #ff6600; / برتقالي */
+      background-color: #ff6600; /* برتقالي */
       color: white;
       border: none;
       border-radius: 10px;
       padding: 15px;
       margin: 10px 0;
       text-decoration: none;
-      display: block;
+      display: flex;
+      align-items: center;
       font-size: 1.1em;
       transition: background 0.3s;
     }
-
-    .link-button:hover {
-      background-color: #e65c00;
+    .link-button i {
+      margin-right: 10px; /* مسافة بين الأيقونة والنص */
+      font-size: 1.3em;
     }
-
+    .link-button:hover {
+      background-color: #e65c00; /* تغيير اللون عند التمرير */
+    }
     @media (max-width: 600px) {
       h1 {
         font-size: 1.5em;
@@ -64,9 +66,14 @@
 </head>
 <body>
   <div class="container">
-    <img class="logo" src="logo.jpeg" alt="Fuze Logo">
+    <!-- الشعار مع التعديل الجديد -->
+    <img class="logo" src="logo.jpeg" alt="Fuze Logo" />
+    <!-- اسم المتجر -->
     <h1>Fuze store</h1>
-    <a class="link-button" href="https://www.tiktok.com/@ifuzestore?_t=ZS-8w8BJunuqNV&_r=1" target="_blank">تابعنا على TikTok</a>
+    <!-- رابط تيك توك -->
+    <a class="link-button" href="https://www.tiktok.com/@ifuzestore?_t=ZS-8w8DPwr3pdQ&_r=1" target="_blank"><i class="fab fa-tiktok"></i>تابعنا على TikTok</a>
+    <!-- رابط واتساب -->
+    <a class="link-button" href="https://wa.me/966553014551" target="_blank"><i class="fab fa-whatsapp"></i>تواصل معنا على WhatsApp</a>
   </div>
 </body>
 </html>
